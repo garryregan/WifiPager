@@ -10,7 +10,9 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c730faa8-dca2-4c5a-af84-47fe63c0e8fe" name="Default Changelist" comment="" />
+    <list default="true" id="c730faa8-dca2-4c5a-af84-47fe63c0e8fe" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/wifipager/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/wifipager/MainActivity.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -127,10 +129,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1591620371083">
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1591622821533">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1591620371083" />
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1591622821533" />
     <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1591605125662">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
