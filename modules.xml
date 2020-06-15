@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/WifiPager.iml" filepath="$PROJECT_DIR$/.idea/modules/WifiPager.iml" group="WifiPager" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="WifiPager/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/WifiPagerV2.iml" filepath="$PROJECT_DIR$/.idea/modules/WifiPagerV2.iml" group="WifiPagerV2" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="WifiPagerV2/app" />
     </modules>
   </component>
 </project>

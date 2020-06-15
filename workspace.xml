@@ -2,16 +2,12 @@
 <project version="4">
   <component name="AndroidLayouts">
     <shared>
-      <config>
-        <device id="pixel" />
-        <device id="Nexus 7" />
-        <device id="pixel_2" />
-      </config>
+      <config />
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c730faa8-dca2-4c5a-af84-47fe63c0e8fe" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/wifipager/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/wifipager/MainActivity.java" afterDir="false" />
+    <list default="true" id="e517321e-f9e7-4ef2-8108-d9cef49399f1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/wifipagerv2/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/wifipagerv2/MainActivity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,17 +27,10 @@
       </state>
     </system>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1ctX18S8QXXTqOy5rHiy05uFCKi" />
+  <component name="ProjectId" id="1dM6YdoNOsqCgXUTagS682e9DMG" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -50,7 +39,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="3300a56cd778a41d" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-06-08T09:28:47.038Z" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-06-15T12:13:51.861Z" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
@@ -120,22 +109,12 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c730faa8-dca2-4c5a-af84-47fe63c0e8fe" name="Default Changelist" comment="" />
-      <created>1591348645582</created>
+      <changelist id="e517321e-f9e7-4ef2-8108-d9cef49399f1" name="Default Changelist" comment="" />
+      <created>1592222664015</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1591348645582</updated>
+      <updated>1592222664015</updated>
     </task>
     <servers />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1591622821533">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1591622821533" />
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1591605125662">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1591605125662" />
   </component>
 </project>
