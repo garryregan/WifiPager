@@ -6,13 +6,19 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.IntentFilter;
 import android.net.wifi.WifiManager;
+import android.net.wifi.p2p.WifiP2pDevice;
+import android.net.wifi.p2p.WifiP2pDeviceList;
 import android.net.wifi.p2p.WifiP2pManager;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -27,6 +33,10 @@ public class MainActivity extends AppCompatActivity {
 
     BroadcastReceiver mReceiver;
     IntentFilter mIntentFilter;
+
+    List<WifiP2pDevice> peers = new ArrayList<WifiP2pDevice>();
+    String[] deviceNameArray;
+    WifiP2pDevice[] deviceArray;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +60,23 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
+        btnDiscover.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mManager.discoverPeers(mChannel, new WifiP2pManager.ActionListener() {
+                    @Override
+                    public void onSuccess() {
+                        connectionStatus.setText("Discovery Started");
+                    }
+
+                    @Override
+                    public void onFailure(int i) {
+                        connectionStatus.setText("Discovery Starting Failed");
+                    }
+                });
+            }
+        });
     }
 
     private void initialWork() {
@@ -70,6 +97,30 @@ public class MainActivity extends AppCompatActivity {
         mIntentFilter.addAction(WifiP2pManager.WIFI_P2P_CONNECTION_CHANGED_ACTION);
         mIntentFilter.addAction(WifiP2pManager.WIFI_P2P_THIS_DEVICE_CHANGED_ACTION);
     }
+
+    WifiP2pManager.PeerListListener peerListListener = new WifiP2pManager.PeerListListener() {
+        @Override
+        public void onPeersAvailable(WifiP2pDeviceList peerList) {
+            if(!peerList.getDeviceList().equals(peers)){
+                peers.clear();
+                peers.addAll(peerList.getDeviceList());
+
+                deviceNameArray = new String[peerList.getDeviceList().size()];
+                deviceArray = new WifiP2pDevice[peerList.getDeviceList().size()];
+                int index = 0;
+
+                for (WifiP2pDevice device : peerList.getDeviceList()){
+                    deviceNameArray[index] = device.deviceName;
+                    deviceArray[index] = device;
+                    index++;
+                }
+
+                ArrayAdapter<String> adapter = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_list_item_1, deviceNameArray);
+                listView.setAdapter(adapter);
+
+            }
+        }
+    };
 
     @Override
     protected void onResume() {
