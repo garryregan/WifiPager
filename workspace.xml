@@ -2,16 +2,16 @@
 <project version="4">
   <component name="AndroidLayouts">
     <shared>
-      <config>
-        <device id="pixel" />
-        <device id="Nexus 7" />
-        <device id="pixel_2" />
-      </config>
+      <config />
     </shared>
   </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="c730faa8-dca2-4c5a-af84-47fe63c0e8fe" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/wifipager/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/wifipager/MainActivity.java" afterDir="false" />
+    <list default="true" id="e517321e-f9e7-4ef2-8108-d9cef49399f1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/wifipagerv2/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/wifipagerv2/MainActivity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +41,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1ctX18S8QXXTqOy5rHiy05uFCKi" />
+  <component name="ProjectId" id="1dM6YdoNOsqCgXUTagS682e9DMG" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -50,7 +50,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="3300a56cd778a41d" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-06-08T09:28:47.038Z" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-06-17T10:15:27.174Z" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
@@ -120,22 +120,53 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c730faa8-dca2-4c5a-af84-47fe63c0e8fe" name="Default Changelist" comment="" />
-      <created>1591348645582</created>
+      <changelist id="e517321e-f9e7-4ef2-8108-d9cef49399f1" name="Default Changelist" comment="" />
+      <created>1592222664015</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1591348645582</updated>
+      <updated>1592222664015</updated>
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
-    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1591622821533">
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1592386915758">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1591622821533" />
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1591605125662">
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1592386915758" />
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1592388930336">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1591605125662" />
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592388930336" />
+    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1592388930336">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592388930336" />
+    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1592388930336">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592388930336" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1592388930336">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592388930336" />
+    <state x="769" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1592381335966">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="769" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1592381335966" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1592383300688">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1592383300688" />
   </component>
 </project>
