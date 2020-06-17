@@ -14,7 +14,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="3300a56cd778a41d" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="HGAJ15GL" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -45,8 +45,8 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="3300a56cd778a41d" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-06-17T08:45:10.649Z" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="HGAJ15GL" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-06-17T09:52:54.062Z" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
@@ -136,10 +136,10 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1592384342418">
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1592386915758">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1592384342418" />
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1592386915758" />
     <state x="769" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1592381335966">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
