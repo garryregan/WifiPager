@@ -4,7 +4,7 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "com.example.wifipager",
+  "applicationId": "com.example.wifipagerv2",
   "variantName": "debug",
   "elements": [
     {

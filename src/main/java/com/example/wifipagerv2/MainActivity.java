@@ -267,13 +267,26 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
-        public void write(byte[] bytes){
-            try {
-                outputStream.write(bytes);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+        public void write(final byte[] bytes){
+            new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    try {
+                        outputStream.write(bytes);
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }).start();
         }
+
+//        public void write(byte[] bytes){
+//            try {
+//                outputStream.write(bytes);
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            }
+//        }
     }
 
     public class ClientClass extends Thread{
