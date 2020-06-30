@@ -3,9 +3,11 @@ package com.example.wifipagerv2;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Notification;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.IntentFilter;
+import android.media.Ringtone;
 import android.net.wifi.WifiManager;
 import android.net.wifi.p2p.WifiP2pConfig;
 import android.net.wifi.p2p.WifiP2pDevice;
@@ -23,6 +25,10 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import android.media.MediaPlayer;
+import android.media.RingtoneManager;
+import android.net.Uri;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -218,6 +224,18 @@ public class MainActivity extends AppCompatActivity {
         unregisterReceiver(mReceiver);
     }
 
+
+    public void ringtone(){
+        try {
+            Uri notification = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
+            Ringtone r = RingtoneManager.getRingtone(getApplicationContext(), notification);
+            r.play();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+
     public class ServerClass extends Thread{
         Socket socket;
         ServerSocket serverSocket;
@@ -229,6 +247,7 @@ public class MainActivity extends AppCompatActivity {
                 socket = serverSocket.accept();
                 sendReceive = new SendReceive(socket);
                 sendReceive.start();
+
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -245,9 +264,13 @@ public class MainActivity extends AppCompatActivity {
             try {
                 inputStream = socket.getInputStream();
                 outputStream = socket.getOutputStream();
+
             } catch (IOException e) {
                 e.printStackTrace();
             }
+            ringtone();
+            //Will set off ringtone when devices connect
+
         }
 
         @Override
@@ -260,6 +283,8 @@ public class MainActivity extends AppCompatActivity {
                     bytes = inputStream.read(buffer);
                     if(bytes>0){
                         handler.obtainMessage(MESSAGE_READ, bytes, -1, buffer).sendToTarget();
+                        ringtone(); // Plays a ringtone when message is received
+
                     }
                 } catch (IOException e) {
                     e.printStackTrace();
@@ -269,15 +294,20 @@ public class MainActivity extends AppCompatActivity {
 
         public void write(final byte[] bytes){
             new Thread(new Runnable() {
-                @Override
                 public void run() {
+
                     try {
                         outputStream.write(bytes);
+
+
                     } catch (IOException e) {
                         e.printStackTrace();
+
                     }
                 }
             }).start();
+
+
         }
 
 //        public void write(byte[] bytes){
@@ -300,6 +330,7 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public void run() {
+
             try {
                 socket.connect(new InetSocketAddress(hostAdd, 8888), 500);
                 sendReceive = new SendReceive(socket);
@@ -308,6 +339,8 @@ public class MainActivity extends AppCompatActivity {
             } catch (IOException e) {
                 e.printStackTrace();
             }
+
+
         }
     }
 }
