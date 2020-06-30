@@ -80,6 +80,8 @@ public class MainActivity extends AppCompatActivity {
                     byte[] readBuff = (byte[]) msg.obj;
                     String tempMsg = new String(readBuff, 0, msg.arg1);
                     read_msg_box.setText(tempMsg);
+                    Toast.makeText(getApplicationContext(), "Message Received: " + tempMsg, Toast.LENGTH_SHORT).show();
+
                     break;
             }
             return true;
@@ -265,11 +267,13 @@ public class MainActivity extends AppCompatActivity {
                 inputStream = socket.getInputStream();
                 outputStream = socket.getOutputStream();
 
+
             } catch (IOException e) {
                 e.printStackTrace();
             }
             ringtone();
             //Will set off ringtone when devices connect
+
 
         }
 
@@ -277,6 +281,7 @@ public class MainActivity extends AppCompatActivity {
         public void run() {
             byte[] buffer = new byte[1024];
             int bytes;
+            
 
             while (socket != null){
                 try {
@@ -284,12 +289,13 @@ public class MainActivity extends AppCompatActivity {
                     if(bytes>0){
                         handler.obtainMessage(MESSAGE_READ, bytes, -1, buffer).sendToTarget();
                         ringtone(); // Plays a ringtone when message is received
-
                     }
+
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
             }
+
         }
 
         public void write(final byte[] bytes){
@@ -298,16 +304,15 @@ public class MainActivity extends AppCompatActivity {
 
                     try {
                         outputStream.write(bytes);
+                    }
 
-
-                    } catch (IOException e) {
+                    catch (IOException e) {
                         e.printStackTrace();
 
                     }
+
                 }
             }).start();
-
-
         }
 
 //        public void write(byte[] bytes){
@@ -339,7 +344,6 @@ public class MainActivity extends AppCompatActivity {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-
 
         }
     }
